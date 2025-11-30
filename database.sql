@@ -10,7 +10,6 @@ CREATE TABLE categorias (
 CREATE TABLE proveedores (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
-    contacto VARCHAR(255),
     telefono VARCHAR(20),
     correo VARCHAR(255),
     direccion TEXT
@@ -35,11 +34,11 @@ INSERT INTO categorias (nombre, descripcion) VALUES
 ('Deportes', 'Equipamiento y ropa deportiva'),
 ('Juguetes', 'Juguetes y juegos para niños');
 
-INSERT INTO proveedores (nombre, contacto, telefono, correo, direccion) VALUES 
-('TechSolutions', 'Carlos Ruiz', '555-0101', 'contacto@techsolutions.com', 'Av. Tecnologica 123, Ciudad'), 
-('ModaGlobal', 'Ana Torres', '555-0202', 'ventas@modaglobal.com', 'Calle de la Moda 45, Centro'),
-('HomeEssentials', 'Luis Mendez', '555-0303', 'info@homeessentials.com', 'Blvd. del Hogar 789, Norte'),
-('SportLife', 'Marta Gomez', '555-0404', 'soporte@sportlife.com', 'Camino al Estadio 10, Sur');
+INSERT INTO proveedores (nombre, telefono, correo, direccion) VALUES 
+('TechSolutions', '555-0101', 'contacto@techsolutions.com', 'Av. Tecnologica 123, Ciudad'), 
+('ModaGlobal', '555-0202', 'ventas@modaglobal.com', 'Calle de la Moda 45, Centro'),
+('HomeEssentials', '555-0303', 'info@homeessentials.com', 'Blvd. del Hogar 789, Norte'),
+('SportLife', '555-0404', 'soporte@sportlife.com', 'Camino al Estadio 10, Sur');
 
 INSERT INTO productos (nombre, precio, stock, categoria_id, proveedor_id) VALUES 
 ('Laptop Gamer', 1500.00, 5, 1, 1),

@@ -1,14 +1,6 @@
 CREATE DATABASE IF NOT EXISTS inventario_db;
 USE inventario_db;
 
--- Desactivar verificación de claves foráneas para permitir borrar tablas
-SET FOREIGN_KEY_CHECKS = 0;
-
-DROP TABLE IF EXISTS productos;
-DROP TABLE IF EXISTS categorias;
-DROP TABLE IF EXISTS proveedores;
-
-SET FOREIGN_KEY_CHECKS = 1;
 
 CREATE TABLE categorias (
     id INT AUTO_INCREMENT PRIMARY KEY,

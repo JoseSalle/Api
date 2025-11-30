@@ -1,7 +1,6 @@
 CREATE DATABASE IF NOT EXISTS inventario_db;
 USE inventario_db;
 
-
 CREATE TABLE categorias (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(255) NOT NULL,
